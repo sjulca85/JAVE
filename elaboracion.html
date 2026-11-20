@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elaboración | JAVE</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f1e7;
+            color: #493326;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #493326;
+            color: #fff5e6;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            letter-spacing: 4px;
+        }
+
+        header p {
+            color: #e5c58b;
+            font-size: 13px;
+        }
+
+        nav {
+            background: #604632;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        nav a {
+            color: #fff5e6;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #e5c58b;
+        }
+
+        .portada {
+            background: linear-gradient(110deg, #493326, #806044);
+            color: #fff5e6;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .portada small {
+            color: #e5c58b;
+            letter-spacing: 3px;
+        }
+
+        .portada h2 {
+            font-size: 38px;
+            margin: 12px 0;
+        }
+
+        .portada p {
+            max-width: 650px;
+            margin: auto;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .seccion {
+            padding: 45px 10px;
+        }
+
+        .seccion h2 {
+            color: #805b35;
+            font-size: 27px;
+            margin-bottom: 15px;
+        }
+
+        .seccion > p {
+            margin-bottom: 20px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 22px;
+            margin: 30px 0;
+        }
+
+        .foto {
+            background: #fffaf1;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .foto img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .foto p {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #604632;
+        }
+
+        .destacado {
+            background: #e9dcc6;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 25px 0;
+        }
+
+        .pasos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 18px;
+            margin-top: 25px;
+        }
+
+        .paso {
+            background: #fffaf1;
+            padding: 22px;
+            border-radius: 10px;
+            border-bottom: 4px solid #b9945b;
+        }
+
+        .paso h3 {
+            color: #805b35;
+            margin-bottom: 10px;
+        }
+
+        .cierre {
+            text-align: center;
+            padding: 35px;
+            background: #e9dcc6;
+            border-radius: 12px;
+            margin: 20px 0 45px;
+        }
+
+        footer {
+            background: #493326;
+            color: #fff5e6;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        footer p {
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            .portada h2 {
+                font-size: 29px;
+            }
+
+            .seccion h2 {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>JAVE</h1>
+    <p>Juventud, Amabilidad, Valentía y Emprendimiento</p>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="proposito.html">Propósito</a>
+    <a href="producto.html">Producto</a>
+    <a href="elaboracion.html">Elaboración</a>
+    <a href="galeria.html">Galería</a>
+    <a href="equipo.html">Equipo</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
+
+<section class="portada">
+    <small>NUESTRO PROCESO</small>
+    <h2>De nuestra tierra a tu mesa</h2>
+    <p>
+        Cada preparación representa una oportunidad para aprovechar
+        los recursos de nuestra comunidad y convertirlos en un
+        emprendimiento hecho con dedicación.
+    </p>
+</section>
+
+<main>
+
+    <section class="seccion">
+
+        <h2>Nuestra inspiración: el plátano local</h2>
+
+        <p>
+            En San José de Moro contamos con recursos que forman parte
+            de nuestra vida cotidiana. Elegimos el plátano como
+            ingrediente principal de nuestro keke, aprovechando
+            este producto de nuestra localidad.
+        </p>
+
+        <div class="galeria">
+
+            <div class="foto">
+                <img src="img/elaboracion/ingredientes.png"
+                     alt="Ingredientes del keke de plátano">
+                <p>Ingredientes seleccionados</p>
+            </div>
+
+            <div class="foto">
+                <img src="img/elaboracion/mezcla.png"
+                     alt="Preparación de la mezcla">
+                <p>Preparación de los ingredientes</p>
+            </div>
+
+            <div class="foto">
+                <img src="img/elaboracion/preparacion.png"
+                     alt="Proceso de elaboración del keke">
+                <p>Elaboración de nuestro producto</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="seccion">
+
+        <div class="destacado">
+
+            <h2>Más aprovechamiento, menos desperdicio</h2>
+
+            <p>
+                Nuestra propuesta busca dar un nuevo aprovechamiento
+                a los plátanos locales que están maduros y todavía
+                son aptos para el consumo. De esta manera, contribuimos
+                a reducir el desperdicio de alimentos y a valorar
+                los recursos de nuestra propia tierra.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="seccion">
+
+        <h2>¿Cómo elaboramos nuestro keke?</h2>
+
+        <p>
+            Cada etapa requiere organización, cuidado y trabajo
+            en equipo para conseguir un producto preparado
+            con dedicación.
+        </p>
+
+        <div class="pasos">
+
+            <div class="paso">
+                <h3>01. Selección</h3>
+                <p>
+                    Elegimos los plátanos y demás ingredientes
+                    adecuados para nuestra preparación.
+                </p>
+            </div>
+
+            <div class="paso">
+                <h3>02. Preparación</h3>
+                <p>
+                    Organizamos y preparamos los ingredientes
+                    siguiendo las indicaciones de nuestra receta.
+                </p>
+            </div>
+
+            <div class="paso">
+                <h3>03. Horneado</h3>
+                <p>
+                    Realizamos el horneado con cuidado
+                    hasta obtener nuestro keke de plátano.
+                </p>
+            </div>
+
+            <div class="paso">
+                <h3>04. Presentación</h3>
+                <p>
+                    Organizamos y presentamos el producto
+                    para compartirlo con nuestros clientes.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="cierre">
+
+        <h2>Una propuesta con identidad local</h2>
+
+        <p>
+            En JAVE creemos que emprender también significa reconocer
+            el valor de lo que tenemos cerca. Nuestro keke de plátano
+            representa una iniciativa juvenil que une creatividad,
+            aprovechamiento de recursos y compromiso con nuestra comunidad.
+        </p>
+
+    </section>
+
+</main>
+
+<footer>
+    <p><strong>JAVE | Sabor que nace de nuestra tierra</strong></p>
+    <p>San José de Moro, Pacanga, Chepén, La Libertad, Perú</p>
+    <p>© 2026 JAVE. Emprendimiento juvenil.</p>
+</footer>
+
+</body>
+</html>

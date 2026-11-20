@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería | JAVE</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: #f8f3e9;
+            color: #39271d;
+        }
+
+        header {
+            background: #39271d;
+            padding: 22px 7%;
+            text-align: center;
+        }
+
+        .logo {
+            color: #e5c58b;
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        nav {
+            background: #4b3427;
+            padding: 15px 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 22px;
+        }
+
+        nav a {
+            color: #fff8ed;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #e5c58b;
+        }
+
+        .portada {
+            text-align: center;
+            padding: 65px 20px 45px;
+        }
+
+        .portada h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            color: #533824;
+            margin-bottom: 15px;
+        }
+
+        .portada p {
+            color: #786453;
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        .seccion {
+            padding: 35px 8% 65px;
+        }
+
+        .titulo-seccion {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .titulo-seccion h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
+            color: #533824;
+            margin-bottom: 10px;
+        }
+
+        .titulo-seccion p {
+            color: #806d5b;
+        }
+
+        .galeria-productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+            max-width: 950px;
+            margin: auto;
+        }
+
+        .producto-card {
+            background: #fffdf8;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 18px rgba(57, 39, 29, 0.10);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .producto-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .producto-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .producto-info {
+            padding: 25px 20px;
+        }
+
+        .producto-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 23px;
+            color: #533824;
+            margin-bottom: 10px;
+        }
+
+        .producto-info p {
+            color: #786453;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        .precio {
+            display: inline-block;
+            margin-top: 15px;
+            color: #8a642f;
+            font-weight: bold;
+        }
+
+        .mensaje {
+            background: #eee3d0;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .mensaje h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 27px;
+            margin-bottom: 12px;
+            color: #533824;
+        }
+
+        .mensaje p {
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.8;
+            color: #705b48;
+        }
+
+        footer {
+            background: #39271d;
+            color: #f8f3e9;
+            text-align: center;
+            padding: 28px 15px;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 600px) {
+            .portada h1 {
+                font-size: 32px;
+            }
+
+            nav {
+                gap: 13px;
+            }
+
+            .producto-card img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">JAVE</div>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="proposito.html">Propósito</a>
+        <a href="producto.html">Producto</a>
+        <a href="elaboracion.html">Elaboración</a>
+        <a href="galeria.html">Galería</a>
+        <a href="equipo.html">Equipo</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <section class="portada">
+        <h1>Nuestra galería</h1>
+        <p>
+            Cada producto representa nuestro esfuerzo, creatividad
+            y compromiso con el aprovechamiento de los recursos
+            de nuestra comunidad.
+        </p>
+    </section>
+
+    <section class="seccion">
+
+        <div class="titulo-seccion">
+            <h2>Nuestros productos</h2>
+            <p>Conoce nuestro keke de plátano y su presentación.</p>
+        </div>
+
+        <div class="galeria-productos">
+
+            <div class="producto-card">
+                <img src="img/productos/keke-completo.png"
+                     alt="Nuestro keke de plátano">
+
+                <div class="producto-info">
+                    <h3>Nuestro keke</h3>
+                    <p>
+                        Elaborado con plátanos de nuestra localidad,
+                        con dedicación y un toque artesanal.
+                    </p>
+                    <span class="precio">S/ 5.00 por porción</span>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <img src="img/productos/keke-porcion.png"
+                     alt="Porción de keke de plátano">
+
+                <div class="producto-info">
+                    <h3>Una porción de sabor</h3>
+                    <p>
+                        Una presentación práctica para disfrutar
+                        el sabor de nuestro producto.
+                    </p>
+                    <span class="precio">S/ 5.00</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="mensaje">
+        <h2>Sabor que nace de nuestra tierra</h2>
+        <p>
+            En JAVE valoramos los productos de nuestra comunidad
+            y trabajamos en equipo para convertir los recursos
+            locales en nuevas oportunidades de emprendimiento.
+        </p>
+    </section>
+
+    <footer>
+        <p>JAVE - Juventud, Amabilidad, Valentía y Emprendimiento</p>
+        <p>Sencillamente hecho en San José de Moro, Pacanga, Chepén.</p>
+        <p>© 2026 JAVE. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

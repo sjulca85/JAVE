@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVE | Sabor que nace de nuestra tierra</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f1e7;
+            color: #493326;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #493326;
+            color: #fff5e6;
+            padding: 22px 8%;
+            text-align: center;
+        }
+
+        .logo h1 {
+            font-size: 34px;
+            letter-spacing: 5px;
+        }
+
+        .logo p {
+            color: #e5c58b;
+            font-size: 13px;
+        }
+
+        nav {
+            background: #604632;
+            padding: 16px 12px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 22px;
+        }
+
+        nav a {
+            color: #fff5e6;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #e5c58b;
+        }
+
+        .portada {
+            min-height: 430px;
+            padding: 85px 8%;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(110deg, #493326, #806044);
+            color: #fff5e6;
+        }
+
+        .portada-contenido {
+            max-width: 700px;
+        }
+
+        .portada small {
+            color: #e5c58b;
+            letter-spacing: 3px;
+        }
+
+        .portada h2 {
+            font-size: clamp(36px, 6vw, 58px);
+            line-height: 1.15;
+            margin: 18px 0;
+        }
+
+        .portada p {
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #d5b47c;
+            color: #493326;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background: #e5c58b;
+        }
+
+        .seccion {
+            max-width: 1100px;
+            margin: auto;
+            padding: 65px 25px;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .titulo h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .titulo p {
+            color: #76624f;
+        }
+
+        .presentacion {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .tarjetas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .tarjeta {
+            background: #fffaf1;
+            padding: 28px;
+            border-radius: 10px;
+            border-bottom: 4px solid #b9945b;
+        }
+
+        .tarjeta h3 {
+            color: #805b35;
+            margin-bottom: 12px;
+        }
+
+        .producto {
+            background: #e9dcc6;
+            border-radius: 12px;
+            padding: 40px 25px;
+            text-align: center;
+        }
+
+        .producto h2 {
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .precio {
+            font-size: 26px;
+            font-weight: bold;
+            color: #805b35;
+            margin: 15px 0;
+        }
+
+        .contacto {
+            background: #493326;
+            color: #fff5e6;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .contacto h2 {
+            margin-bottom: 12px;
+        }
+
+        .contacto p {
+            margin-bottom: 22px;
+        }
+
+        footer {
+            background: #35251c;
+            color: #e9dcc6;
+            text-align: center;
+            padding: 25px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            .portada {
+                padding: 65px 7%;
+            }
+
+            nav {
+                gap: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <h1>JAVE</h1>
+        <p>Juventud, Amabilidad, Valentía y Emprendimiento</p>
+    </div>
+</header>
+
+<!-- MENÚ PRINCIPAL -->
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="proposito.html">Propósito</a>
+    <a href="producto.html">Producto</a>
+    <a href="elaboracion.html">Elaboración</a>
+    <a href="galeria.html">Galería</a>
+    <a href="equipo.html">Equipo</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
+
+<!-- PORTADA -->
+<section class="portada">
+    <div class="portada-contenido">
+        <small>EMPRENDIMIENTO JUVENIL LOCAL</small>
+
+        <h2>Sabor que nace de nuestra tierra</h2>
+
+        <p>
+            Transformamos recursos de nuestra localidad en una propuesta
+            llena de sabor, creatividad y dedicación. Descubre nuestro
+            keke de plátano, inspirado en los productos de San José de Moro.
+        </p>
+
+        <a href="producto.html" class="boton">
+            Conoce nuestro producto
+        </a>
+    </div>
+</section>
+
+<!-- PRESENTACIÓN -->
+<section class="seccion">
+
+    <div class="titulo">
+        <h2>Bienvenidos a JAVE</h2>
+        <p>Juventud, creatividad e identidad local.</p>
+    </div>
+
+    <div class="presentacion">
+        <p>
+            Somos JAVE, un equipo de jóvenes emprendedores de
+            San José de Moro que busca desarrollar productos
+            accesibles y atractivos, aprovechando los recursos
+            de nuestra comunidad.
+
+            Nuestro primer producto es el keke de plátano,
+            una propuesta que busca dar mayor aprovechamiento
+            a los plátanos locales y contribuir a reducir
+            su desperdicio.
+        </p>
+    </div>
+
+</section>
+
+<!-- NUESTROS VALORES -->
+<section class="seccion">
+
+    <div class="titulo">
+        <h2>Lo que nos identifica</h2>
+        <p>Los valores que guían nuestro emprendimiento.</p>
+    </div>
+
+    <div class="tarjetas">
+
+        <div class="tarjeta">
+            <h3>Identidad local</h3>
+            <p>
+                Valoramos los productos y recursos
+                de nuestra comunidad.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Aprovechamiento</h3>
+            <p>
+                Promovemos el uso responsable de los
+                plátanos de nuestra localidad.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Trabajo en equipo</h3>
+            <p>
+                Unimos nuestras ideas y habilidades
+                para alcanzar nuestros objetivos.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PRODUCTO -->
+<section class="seccion">
+
+    <div class="producto">
+
+        <h2>Nuestro primer producto</h2>
+
+        <h3>Keke de plátano</h3>
+
+        <p>
+            Una propuesta artesanal elaborada con dedicación,
+            inspirada en el aprovechamiento de los plátanos
+            de nuestra localidad.
+        </p>
+
+        <p class="precio">S/ 5.00</p>
+
+        <a href="producto.html" class="boton">
+            Ver producto
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ACCESOS A OTRAS SECCIONES -->
+<section class="seccion">
+
+    <div class="titulo">
+        <h2>Conoce más sobre nosotros</h2>
+        <p>Descubre cómo trabajamos y qué nos inspira.</p>
+    </div>
+
+    <div class="tarjetas">
+
+        <div class="tarjeta">
+            <h3>Nuestro propósito</h3>
+            <p>Conoce los objetivos y compromisos de JAVE.</p>
+            <a href="proposito.html">Conocer más</a>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Nuestra elaboración</h3>
+            <p>Descubre los ingredientes y las etapas de preparación.</p>
+            <a href="elaboracion.html">Ver elaboración</a>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Nuestra galería</h3>
+            <p>Observa fotografías de nuestros productos y actividades.</p>
+            <a href="galeria.html">Ver fotografías</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto">
+
+    <h2>¿Quieres conocer más sobre JAVE?</h2>
+
+    <p>
+        Estamos disponibles para brindarte información
+        sobre nuestros productos y emprendimiento.
+    </p>
+
+    <a href="contacto.html" class="boton">
+        Contáctanos
+    </a>
+
+</section>
+
+<footer>
+
+    <p><strong>JAVE | Sabor que nace de nuestra tierra</strong></p>
+
+    <p>San José de Moro, Pacanga, Chepén, La Libertad, Perú</p>
+
+    <p>© 2026 JAVE. Emprendimiento juvenil.</p>
+
+</footer>
+
+</body>
+</html>
